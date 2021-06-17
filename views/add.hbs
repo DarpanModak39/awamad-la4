@@ -1,0 +1,29 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/add">Add Photos</a>
+    </nav>
+
+    <form action="/add" method="POST">
+      <h2 style="color: green;">{{message}}</h2>
+      <h2>Add Photo</h2>
+      <input type="text" name="name" placeholder="Enter Name" /><br /><br />
+      <input type="email" name="email" placeholder="Enter Email" /><br /><br />
+      <label for="category">Select Category</label>
+      <select name="category">
+        <option value="nature">Nature</option>
+        <option value="abstract">Abstract</option>
+        <option value="Wildlife">Wildlife</option>
+      </select><br /><br />
+      <input type="file" name="image" /><br /><br />
+      <input type="submit" value="Save" /><br /><br />
+    </form>
+  </body>
+</html>
